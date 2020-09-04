@@ -1,0 +1,15 @@
+/* Perform a basic reset. Use universal selector. Select each and every element on page and apply CSS to it */
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+
+@import "layout/header";
+
+@import "pages/home";
