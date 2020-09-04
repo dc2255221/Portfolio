@@ -10,12 +10,6 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  /* font-size: 16px; */
-  line-height: 1.7;
-  color: #777;
-  padding: 3rem;
   box-sizing: border-box; }
 
 @keyframes moveInLeft {
@@ -45,6 +39,38 @@ body {
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /* 
+        animation-delay: 3s;
+        animation-iteration-count: 3; 
+        */ }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out; }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -92,7 +118,7 @@ body {
 .header {
   height: 95vh;
   /* at every point, header should be 95% of viewport height */
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(93, 176, 253, 0.7), rgba(83, 104, 245, 0.7)), url(../img/goldengatebridge.jpeg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -109,30 +135,3 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-
-/* .logo:hover {
-    animation: moveInRight 1s ease-out;
-} */
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    /* 
-        animation-delay: 3s;
-        animation-iteration-count: 3; 
-        */ }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-out; }
